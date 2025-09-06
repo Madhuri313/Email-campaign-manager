@@ -1,0 +1,10 @@
+{% extends 'campaigns/email_base.html' %}
+
+{% block content %}
+    <div>
+    {{ html_content|safe }}
+    {% if article_url %}
+        <p>Read more: <a href="{{ article_url }}">{{ article_url }}</a></p>
+    {% endif %}
+    </div>
+{% endblock %}

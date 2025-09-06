@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{{ subject }}</title>
+    </head>
+    <body>
+        <div style="max-width:600px;margin:0 auto;font-family:Arial,Helvetica,sans-serif;">
+            <header>
+            <h1>{{ subject }}</h1>
+                <p style="color:#666">{{ preview_text }}</p>
+            </header>
+            <main>
+                {% block content %}{% endblock %}
+            </main>
+            <footer style="font-size:12px;color:#999;margin-top:2rem;">
+                <p>To unsubscribe, click here: {{ unsubscribe_link }}</p>
+            </footer>
+        </div>
+    </body>
+</html>
