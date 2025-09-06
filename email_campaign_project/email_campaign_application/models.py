@@ -17,6 +17,7 @@ class Campaign(models.Model):
     subject = models.CharField(max_length=255)
     preview_text = models.CharField(max_length=512, blank=True)
     article_url = models.URLField(blank=True)
+    html_content = models.TextField(blank=True)
     plain_text_content = models.TextField(blank=True)
     published_date = models.DateTimeField(default=timezone.now)
     created_at = models.DateTimeField(auto_now_add=True)
